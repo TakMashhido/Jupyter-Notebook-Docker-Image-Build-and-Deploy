@@ -46,6 +46,9 @@ RUN pip install tensorflow keras
 #Pycaret
 RUN pip install pycaret[full] --use-deprecated=legacy-resolver
 
+#Bug fix for pycaret
+RUN pip install numpy==1.20.3
+
 # Project installs
 RUN pipenv install --skip-lock --system --dev
 
