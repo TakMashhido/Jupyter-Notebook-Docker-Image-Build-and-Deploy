@@ -1,0 +1,1 @@
+docker build -t dgx-jupyter -f Dockerfile .
